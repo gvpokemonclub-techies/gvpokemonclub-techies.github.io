@@ -60,7 +60,7 @@ h2 {
   flex-direction: row;
   gap: 10px;
 }
-button {
+.button {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -78,10 +78,10 @@ button {
   box-sizing: border-box;
   border: var(--white) 4px transparent;
 }
-button:hover {
+.button:hover {
   border: solid;
 }
-button img {
+.button img {
   width: 75%;
   aspect-ratio: 1/1;
 }
@@ -100,6 +100,13 @@ button img {
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+.contactInfo img {
+  width: 100%;
+}
+.contactInfo button {
+  margin: 0;
+  padding: 0;
 }
 .contactInfo button:hover {
   border: var(--GVblue) solid;
