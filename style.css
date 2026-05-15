@@ -1,11 +1,66 @@
-/* This is a css folder that will hold all of out styles to the website*/
-body{
-    background: linear-gradient(to bottom, #ffffff 0%, #0ECBF0 100%);
-    width: 100%;
-    height: 100%;
-    
+/* Variables */
+:root {
+  --GVblue: #0032A0;
+  --black: #181818;
+  --white: #efefef;
+
+  --linkColor:  #0ECBF0;
+  --bigLake:  #3DD1CC;
+  --midnight:  #13155C;
+  --arboretum:  #4A0C6E;
+  --carillonBrick:  #BA6F4C;
+  --archway:  #DEC197;
 }
-.button {
+
+body{
+  background: linear-gradient(to bottom, #84bfed 0%, #3333f1 100%);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: none;
+  gap: none;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin: none;
+}
+.title {
+  width: 100%;
+  height: auto;
+  margin: none;
+  background-color: var(--white);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: var(--black) 4px solid;
+}
+
+h1 {
+  width: 95%;
+  text-align: center;
+}
+h2 {
+  width: 90%;
+  text-align: center;
+}
+
+.navButtons {
+  justify-content: center;
+  align-content: center;
+  background-color: var(--black);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+button {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -15,24 +70,19 @@ body{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  width: 20%;
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  border: var(--white) 4px transparent;
+}
+button:hover {
+  border: solid;
+}
+button img {
+  width: 67px;
+  height: 67px;
 }
 
 .button1 {background-color: #0032A0;}
 .button2 {background-color: #4A0C6E;}
 .button3 {background-color: #13155C;}
-
-/*Colors of GVSU for reference:
-Primary Palette
-
-GVSU Blue: Hex #0032A0
-Black: Hex #000000
-White: Hex #FFFFFF 
-
-Secondary Palette 
-Link Blue: Hex #0ECBF0
-Big Lake: Hex #3DD1CC
-Midnight: Hex #13155C
-Arboretum: Hex #4A0C6E
-Carillon Brick: Hex #BA6F4C
-Archway: Hex #DEC197
-*/
