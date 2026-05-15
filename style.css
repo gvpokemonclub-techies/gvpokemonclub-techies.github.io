@@ -17,4 +17,22 @@ body{
   cursor: pointer;
 }
 
-.button1 {background-color: #04AA6D;}
+.button1 {background-color: #0032A0;}
+.button2 {background-color: #4A0C6E;}
+.button3 {background-color: #13155C;}
+
+/*Colors of GVSU for reference:
+Primary Palette
+
+GVSU Blue: Hex #0032A0
+Black: Hex #000000
+White: Hex #FFFFFF 
+
+Secondary Palette 
+Link Blue: Hex #0ECBF0
+Big Lake: Hex #3DD1CC
+Midnight: Hex #13155C
+Arboretum: Hex #4A0C6E
+Carillon Brick: Hex #BA6F4C
+Archway: Hex #DEC197
+*/
