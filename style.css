@@ -66,7 +66,10 @@ button {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
@@ -79,10 +82,25 @@ button:hover {
   border: solid;
 }
 button img {
-  width: 67px;
-  height: 67px;
+  width: 75%;
+  aspect-ratio: 1/1;
 }
 
 .button1 {background-color: #0032A0;}
 .button2 {background-color: #4A0C6E;}
 .button3 {background-color: #13155C;}
+
+.contactInfo {
+  justify-content: center;
+  align-content: center;
+  background-color: var(--black);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.contactInfo button:hover {
+  border: var(--GVblue) solid;
+}
