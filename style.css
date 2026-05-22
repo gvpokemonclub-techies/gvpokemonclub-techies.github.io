@@ -1,4 +1,9 @@
 /* Variables */
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
 :root {
   --GVblue: #0032A0;
   --black: #181818;
@@ -11,7 +16,9 @@
   --carillonBrick:  #BA6F4C;
   --archway:  #DEC197;
 }
-
+* {
+    transition: all 0.25s ease-in-out;
+}
 body{
   background: linear-gradient(to bottom, #84bfed 0%, #3333f1 100%);
   width: 100%;
@@ -34,10 +41,8 @@ body{
   width: 100%;
   height: auto;
   margin: none;
-  background-color: var(--white);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: var(--black) 4px solid;
+  background-color: var(--GVblue);
+  padding: 20px;
 }
 
 h1 {
@@ -112,3 +117,14 @@ h2 {
 .contactInfo button:hover {
   border: var(--GVblue) solid;
 }
+
+
+/* Keyframes for Animations*/
+@keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
