@@ -1,10 +1,11 @@
-// Project Nav Btns
+// Mini Gallery Nav Btns
 let counter = 0;
 let slidercounter = 0;
 let sliders = document.querySelectorAll('.slider');
 let sections = document.querySelectorAll('section');
 let sliderNavs = document.querySelectorAll('.slider-nav');
 
+// creates IDs for each navbtn and slide, so that they link btns to specific slides
 sliders.forEach(slider => {
     let slides = slider.querySelectorAll('.slide');
     slides.forEach(slide => {
@@ -22,16 +23,17 @@ sliders.forEach(slider => {
 
 sections.forEach(section => {
     let sectionContent = section.querySelector('.section-content');
-    let btn = section.querySelector('.project-section-btn');
+    let btn = section.querySelector('.mini-gallery-btn');
     let btnCircle = section.querySelector('.button-circle');
     let sliderBtns = section.querySelectorAll('.slider-nav a');
 
-    // Open Project Section Box
+    // Open/Close Mini Gallery and turn off the glowing animation
     btn.addEventListener('click', () => {
         section.classList.toggle('active');
+        btnCircle.classList.remove('glow');
     });
 
-    // Project Nav Btn Active Class Toggle
+    // Mini Gallery Nav Btn Color Toggle
     sliderBtns.forEach(button => {
         button.addEventListener('click', e => {
             sliderBtns.forEach(btn => btn.classList.remove('active'));
