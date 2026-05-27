@@ -23,6 +23,10 @@ body{
   flex-direction: column;
   align-self: center;
   align-items: center;
+
+  /*Fonts */
+  font-family: "Lexend", sans-serif;
+  font-weight: 367
 }
 
 .banner {
@@ -43,10 +47,16 @@ body{
 h1 {
   width: 95%;
   text-align: center;
+  /*Fonts */
+  font-family: "Lexend", sans-serif;
+  font-weight: 600
 }
 h2 {
   width: 90%;
   text-align: center;
+  /*Fonts */
+  font-family: "Lexend", sans-serif;
+  font-weight: 640.67
 }
 
 .navButtons {
@@ -77,6 +87,9 @@ h2 {
   aspect-ratio: 1/1;
   box-sizing: border-box;
   border: var(--white) 4px transparent;
+  /*Fonts */
+  font-family: "Lexend", sans-serif;
+  font-weight: 900
 }
 .button:hover {
   border: solid;
