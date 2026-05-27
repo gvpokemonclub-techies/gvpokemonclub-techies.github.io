@@ -12,34 +12,77 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   </head>
-
+  <style>
+    /* Must always save this page after saving other css before testing it out on local server, or else it breaks the website */
+    
+    
+  </style>
   <body>
     
     <img src="media\pokemonclubtitle.png" alt="Our custom title!" class="title">
-    <img src="media\resizedPokemonClubBanner.png" alt="Our custom banner!" class="banner">   
+    <img src="media/gvsuNEWpokeBanner.png" alt="Our custom banner!" class="banner">   
     <div class="navButtons">
-      <button class="button button1">Media
+      <a href="media.html" role="button" class="button button1">Media
         <img src="media/logo.png" alt="Discord Logo"> 
-      </button>
-      <button class="button button2">Gallery
-        <img src="media/camera.webp"alt="PoGo Camera!">
-      </button>
-      <button class="button button3">Resources
-        <img src="media/dabchu.jpg" alt="Swag pikachu dabbing">    
-      </button>
-      <button class="button button1">Home
+      </a>
+      <a href="resources.html" role="button" class="button button2">Resources
+        <img src="media/dabchu.jpg"alt="cool pic of pikachu dabbing!">
+      </a>
+      <a href="gallery.html" role="button" class="button button3">Gallery
+        <img src="media/camera.webp" alt="PoGo Camera">    
+      </a>
+      <a href="index.html" role="button" class="button button1">Home
         <img src="media/logo.png" alt="Discord Logo">    
-      </button>
+      </a>
     </div>
     
-    <h1>Hello there! Welcome to the world web of POKEMON!</h1>
-    <h2>We are a community for those who enjoy anything Pokémon; trading cards, television show, movies, video games, merchandise, etc. All fans, new and old, are welcome to come hang out, make new friends, relax and unwind.</h3>
+    <h1>Hello there! Welcome to the world of POKEMON!</h1>
+    <h3>We are a community for those who enjoy anything Pokémon; trading cards, television show, movies, video games, merchandise, etc. All fans, new and old, are welcome to come hang out, make new friends, relax and unwind.</h3>
     
-    <img src="media/laker.webp"
-    alt="Custom Laker Dhelmise "
-    height="289.5"
-    width="394.5"
-    >
+
+    <!-- Mini Pokedex Gallary -->
+    <section id="Professional">
+      <div class="top-cap">
+        <div class="mini-gallery-btn" role="button">
+          <div class="button-circle glow"></div>
+        </div>
+      </div>
+
+      <div class="section-content">
+        <div class="slider">
+
+          <!-- These are the individual slides, under the slide class; each have an image, title, and paragraph -->
+          <div class="slide">
+            <div class="slide-content">
+              <img src="" alt="sharpedo tank img">
+              <article>
+                <h3><span style="text-decoration: underline;">Sharpedo Tank</span></h3>
+                <p>Fun Game!!! heres the description and how much fun we had.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-content">
+              <img src="" alt="draw from memory img">
+              <article>
+                <h3><span style="text-decoration: underline;">Draw From Memory</span></h3>
+                <p>Draw from memory, look how good we draw!!!</p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bottom-cap">
+        <div class="slider-nav">
+        </div>
+      </div>
+    </section>
+
+
+    <img src="media/laker.webp" alt="Custom Laker Dhelmise" class="dhelmise-img">
 
     <!-- Intro stuff on top --^  -->
     <!-- button stuff --v  -->
@@ -49,23 +92,22 @@
 
 
     <!-- Stuff to be used in media; discord, suitable, gmail, insta -->
-    <h1>Anchor up! Connect with us!</h1>
+    <h1>Connect with us!</h1>
     <div class="contactInfo">
-      <a class="button" href="https://discord.gg/Tevae2b2h7" target="_blank">
+      <a class="button" href="https://discord.gg/Tevae2b2h7">
         <img src="media/discord.png" alt="Discord Logo"> 
       </a>
-      <a class="button" href="https://www.instagram.com/grandvalleypokemonclub2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <a class="button" href="https://www.instagram.com/grandvalleypokemonclub2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
         <img src="media/instagram.jpg" alt="Instagram Logo">
       </a>
-      <a class="button" href="https://app.suitable.co/student-organizations/6zOWS2DuEOOz?tab=profile" target="_blank">
+      <a class="button" href="https://app.suitable.co/student-organizations/6zOWS2DuEOOz?tab=profile">
         <img src="media\suitableLogo.png" alt="Suitable Logo">    
       </a>
-      <a class="button" href="mailto:gvpokemonclub@gmail.com" target="_blank">
-        <img src="media\mail.jpg" alt="Gmail Logo">    
+      <a class="button" href="mailto:gvpokemonclub@gmail.com">
+        <img src="media\Gmail_icon_(2020).svg.webp" alt="Gmail Logo">    
       </a>
     </div>
-    
-    <!-- Stuff to be used in media; discord, suitable, gmail, insta 
+    <!-- Old media stuff 
     <a href="https://discord.gg/Tevae2b2h7" target="_blank" title="Discord invite :o">
     <p>Join to get announcements, for virtual meetings, changes of rooms, to learn the activity of the week, and to chat with other members in between meetings!</p>
     <img src="media/discord.png" alt="Discord Logo" height="160" width="160">    
@@ -83,7 +125,9 @@
 
     <br><br>
     <footer>
-      <p><span style="background-color:#0ECBF0;"> © 2026 GVPC|<a href="">GitHub</a></span> </p>
+      <p>© 2026 GVPC| <a href="">GitHub</a></p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
