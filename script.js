@@ -42,3 +42,48 @@ sections.forEach(section => {
     });
 
 });
+
+//IMAGE SLIDER
+
+const galslides = document.querySelectorAll(".gal-slides img");
+let slideIndex = 0;
+let intervalId = null;
+
+//initializeSlider()
+
+document.addEventListener("DOMContentLoaded", initializeSlider);
+
+function initializeSlider(){
+    if(galslides.length > 0){
+        galslides[slideIndex].classList.add("displaySlide");
+
+        intervalId = setInterval(nextSlide, 5000);
+    }
+}
+
+function showSlide(index){
+
+    if(index >= galslides.length){
+        slideIndex = 0;
+    }
+
+    else if (index < 0){
+        slideIndex = galslides.length - 1;
+    }
+
+    galslides.forEach(slide =>{
+        slide.classList.remove("displaySlide")
+    });
+    galslides[slideIndex].classList.add("displaySlide");
+}
+
+function prevSlide(){
+    slideIndex--;
+    showSlide(slideIndex);
+}
+
+function nextSlide(){
+    slideIndex++;
+    showSlide(slideIndex);
+}
+
