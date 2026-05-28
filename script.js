@@ -57,7 +57,7 @@ function initializeSlider(){
     if(galslides.length > 0){
         galslides[slideIndex].classList.add("displaySlide");
 
-        intervalId = setInterval(nextSlide, 5000);
+        //intervalId = setInterval(nextSlide, 30000);
     }
 }
 
@@ -80,10 +80,17 @@ function showSlide(index){
 function prevSlide(){
     slideIndex--;
     showSlide(slideIndex);
+    resetInterval();
 }
 
 function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
+    resetInterval();
 }
 
+//This would be auto advance if wanted to implement that 
+// function resetInterval(){
+//     clearInterval(intervalId);
+//     intervalId = setInterval(nextSlide, 5000);
+// }

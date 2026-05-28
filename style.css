@@ -380,7 +380,7 @@ section ::-webkit-scrollbar-track {
   overflow:hidden;
 
 }
-.gal-slide img{
+.gal-slides img{
   width: 100%;
   display: none;
 }
