@@ -31,6 +31,13 @@ sections.forEach(section => {
     btn.addEventListener('click', () => {
         section.classList.toggle('active');
         btnCircle.classList.remove('glow');
+
+        if (section.classList.contains('active')) { 
+            section.scrollIntoView({ 
+                behavior: 'smooth', // This creates the "sliding" animation
+                block: 'start'      // Aligns the element to the top of the viewport
+            });
+        } 
     });
 
     // Mini Gallery Nav Btn Color Toggle
