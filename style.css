@@ -1,4 +1,5 @@
 /* Variables */
+@import url('https://googleapis.com');
 @property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
@@ -97,8 +98,26 @@ h3 {
   font-family: "Lexend", sans-serif;
   font-weight: 640.67
 }
-.text-list li{
 
+.welcome-text-container {
+  width: 100%;
+  margin-top: 15px;
+}
+.welcome-text-container img {
+  width: 90%;
+  margin-left: 5%;
+  z-index: 0;
+  justify-self: center;
+  align-self: center;
+}
+.welcome-text-container p {
+  z-index: 10;
+  position: absolute;
+  margin-left: 12%;
+  width: 75%;
+  margin-top: 6%;
+  font-size: 4vw;
+  font-family: 'Pixelify Sans';
 }
 
 .navButtons {
