@@ -23,13 +23,13 @@ sliders.forEach(slider => {
     sliderNavs[slidercounter].firstElementChild.classList.add('active');
     let leftBtn = document.createElement('div');
     leftBtn.role = 'button';
-    leftBtn.innerHTML = "⮜";
+    leftBtn.innerHTML = "◀";
     leftBtn.classList.add('left-navBtn');
     leftBtn.classList.add('active');
     sliderNavs[slidercounter].prepend(leftBtn);
     let rightBtn = document.createElement('div');
     rightBtn.role = 'button';
-    rightBtn.innerHTML = "⮞";
+    rightBtn.innerHTML = "▶";
     rightBtn.classList.add('right-navBtn');
     sliderNavs[slidercounter].appendChild(rightBtn);
     slidercounter += 1;

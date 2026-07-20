@@ -336,13 +336,12 @@ h3 {
 }
 .left-navBtn, .right-navBtn {
   font-size: 1.75rem;
-  color: var(--primary);
   margin-top: -13px;
   cursor: pointer;
 }
 .left-navBtn:hover, .right-navBtn:hover {
     opacity: 1;
-    color: var(--secondary);
+    color: rgb(202, 7, 7);
 }
 .left-navBtn.active, .right-navBtn.active {
   visibility: hidden;
